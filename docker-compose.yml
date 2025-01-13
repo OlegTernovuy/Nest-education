@@ -1,15 +1,15 @@
-version: "4.29.0"
+version: "4.37.2"
 services:
   db:
     container_name: postgres_container
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
+      POSTGRES_USER: nest
+      POSTGRES_PASSWORD: nest
       POSTGRES_DB: nest_db
     ports:
-      - "5432:5432"
+      - "5431:5432"
   pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
